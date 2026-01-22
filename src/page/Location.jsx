@@ -5,8 +5,8 @@ import Drop from '/public/Swap.png'
 
 const Location = () => {
   return (
-    <div className=" md:mt-16 mt-10 flex flex-col md:flex-row items-center justify-between  gap-3.5">
-      <div className=" bg-white py-5 px-10 rounded-md">
+    <div className=" md:mt-16 mt-10 flex flex-col md:flex-row items-center justify-between  md:gap-3.5 gap-1.5">
+      <div className=" bg-white  md:py-5 md:px-10 py-2.5 px-2 rounded-md">
         <div className=" flex items-center gap-3 text-base font-semibold">
           <img src={mark} />
           <h3>Pick - Up</h3>
@@ -15,11 +15,11 @@ const Location = () => {
         
       </div>
 
-      <div className=" h-16 w-16 flex items-center justify-center bg-primary rounded-lg shadow">
+      <div className=" md:h-16 md:w-16 w-12 h-12 flex items-center justify-center bg-primary rounded-lg shadow">
           <img src={Drop}/>
       </div>
 
-     <div className=" bg-white py-5 px-10 rounded-md">
+     <div className=" bg-white md:py-5 md:px-10 py-2.5 px-2 rounded-md">
         <div className=" flex items-center gap-3 text-base font-semibold">
           <img src={mark} />
           <h3>Drop - Off</h3>

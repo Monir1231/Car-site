@@ -7,6 +7,7 @@ import { IoCart } from "react-icons/io5";
 import profile from "../../public/Profil.png";
 import SearchBar from "./Search";
 import { MdReadMore } from "react-icons/md";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
@@ -34,7 +35,7 @@ const Navbar = () => {
               <GiSelfLove className=" size-5 text-darkgray  " />
             </div>
             <div className=" p-2 border border-secondary/40 rounded-full">
-              <IoCart className=" size-5 text-darkgray" />
+             <Link to="/product"> <IoCart className=" size-5 text-darkgray" /></Link>
             </div>
             <div className=" p-2 border border-secondary/40 rounded-full">
               <IoIosSettings className=" size-5 text-darkgray" />

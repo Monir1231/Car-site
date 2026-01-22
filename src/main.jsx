@@ -7,13 +7,19 @@ import { Provider } from "react-redux";
 
 import Home from "./page/Home.jsx";
 import { BrowserRouter, Route, Router, Routes } from "react-router";
+import Product from "./page/Product/Product.jsx";
+import store from "../Redux/store.js";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+
+ <Provider store={store}>
+   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route element={<App />}>
         <Route path="/" element={<Home />} />
+         <Route path="/product" element={<Product/>} />
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
+ </Provider>,
 );
