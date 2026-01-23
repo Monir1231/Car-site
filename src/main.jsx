@@ -7,8 +7,9 @@ import { Provider } from "react-redux";
 
 import Home from "./page/Home.jsx";
 import { BrowserRouter, Route, Router, Routes } from "react-router";
-import Product from "./page/Product/Product.jsx";
+
 import store from "../Redux/store.js";
+import SearchPage from "./page/searchPage/SearchPage.jsx";
 
 createRoot(document.getElementById("root")).render(
 
@@ -17,7 +18,8 @@ createRoot(document.getElementById("root")).render(
     <Routes>
       <Route element={<App />}>
         <Route path="/" element={<Home />} />
-         <Route path="/product" element={<Product/>} />
+         <Route path="/search" element={<SearchPage/>} />
+        
       </Route>
     </Routes>
   </BrowserRouter>

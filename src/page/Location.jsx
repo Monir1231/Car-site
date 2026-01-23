@@ -5,7 +5,7 @@ import Drop from '/public/Swap.png'
 
 const Location = () => {
   return (
-    <div className=" md:mt-16 mt-10 flex flex-col md:flex-row items-center justify-between  md:gap-3.5 gap-1.5">
+    <div className=" md:mt-16 mt-10 flex flex-col lg:flex-row items-center justify-between  md:gap-3.5 gap-1.5">
       <div className=" bg-white  md:py-5 md:px-10 py-2.5 px-2 rounded-md">
         <div className=" flex items-center gap-3 text-base font-semibold">
           <img src={mark} />

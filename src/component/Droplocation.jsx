@@ -3,7 +3,7 @@ import React from 'react'
 const Droplocation = () => {
   return (
    <div className=" mt-5">
-          <from className=" flex items-center md:gap-5">
+          <div className=" flex items-center md:gap-5">
            <div className=" w-fit border-r-1 border-r-[#C3D4E966] md:pr-4 pr-2">
              <label className=" md:text-base text-[12px] font-bold text-[#1A202C] block  ">
               Locations
@@ -39,7 +39,7 @@ const Droplocation = () => {
             </select>
            </div>
 
-          </from>
+          </div>
         </div>
   )
 }
